@@ -1,0 +1,40 @@
+.header-elements {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 16px;
+  border: 3px solid beige;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.scores {
+  font-family: Heebo, sans-serif;
+  margin: 10px 15px;
+  background: beige;
+  padding: 4px 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+h4 {
+  font-family: Heebo, sans-serif;
+  color: blue;
+}
+h1 {
+  color: rgb(28, 32, 34);
+}
+.rules {
+  font-family: Heebo, sans-serif;
+  border-radius: 9px;
+  color: white;
+  padding: 12px 20px;
+  background: rgb(28, 28, 76);
+  border: 1px solid beige;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+.button-position {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,49 @@
+body {
+  background: rgb(28, 28, 76);
+  font-family: Heebo, sans-serif;
+}
+.triangle {
+  position: relative;
+  z-index: -5; /* Lower z-index value */
+  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.circles {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.rock {
+  height: 100px;
+  width: 100px;
+  border: 20px solid rgb(76, 76, 150);
+  background-origin: padding-box;
+  border-radius: 100%;
+  background-color: white;
+  margin-top: 80px;
+}
+.scissor {
+  height: 100px;
+  width: 100px;
+  border: 20px solid rgb(219, 219, 42);
+  background-origin: padding-box;
+  border-radius: 100%;
+  background-color: white;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+.paper {
+  height: 100px;
+  width: 100px;
+  border: 20px solid rgb(162, 49, 49);
+  background-origin: padding-box;
+  border-radius: 100%;
+  background-color: white;
+  margin-top: 70px;
+}
