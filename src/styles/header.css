@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5px 16px;
-  border: 3px solid beige;
+  border: 3px solid hsl(217, 16%, 45%);
   max-width: 500px;
   margin: 0 auto;
   border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 h4 {
   font-family: Heebo, sans-serif;
-  color: blue;
+  color: hsl(229, 64%, 46%);
 }
 h1 {
   color: rgb(28, 32, 34);
@@ -37,4 +37,10 @@ h1 {
 .button-position {
   display: flex;
   justify-content: flex-end;
+}
+.score-information {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -6,10 +6,6 @@ const Header = () => {
         <div className="titles">
           <img src={logImage} alt="log" />
         </div>
-        <div className="scores">
-          <h4>SCORE</h4>
-          <h1>12</h1>
-        </div>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 body {
-  background: rgb(28, 28, 76);
+  background: hsl(237, 48%, 25%);
   font-family: Heebo, sans-serif;
 }
 .triangle {
@@ -8,6 +8,13 @@ body {
   margin-top: 20px;
   display: block;
   margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  color: white;
 }
 img {
   display: block;
@@ -22,7 +29,7 @@ img {
 .rock {
   height: 100px;
   width: 100px;
-  border: 20px solid rgb(76, 76, 150);
+  border: 20px solid hsl(349, 71%, 52%);
   background-origin: padding-box;
   border-radius: 100%;
   background-color: white;
@@ -31,7 +38,7 @@ img {
 .scissor {
   height: 100px;
   width: 100px;
-  border: 20px solid rgb(219, 219, 42);
+  border: 20px solid hsl(39, 89%, 49%);
   background-origin: padding-box;
   border-radius: 100%;
   background-color: white;
@@ -41,7 +48,7 @@ img {
 .paper {
   height: 100px;
   width: 100px;
-  border: 20px solid rgb(162, 49, 49);
+  border: 20px solid hsl(230, 89%, 62%);
   background-origin: padding-box;
   border-radius: 100%;
   background-color: white;
