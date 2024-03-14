@@ -164,14 +164,15 @@ const App = () => {
               )}
             </h3>
           </div>
+          <div className="winner-smallscreen">
+            <h3 className="notifications">{gettingWinner()}</h3>
+            <button className="game-btn" onClick={visible}>
+              PLAY AGAIN
+            </button>
+          </div>
         </>
       )}
-      <div className="winner-smallscreen">
-        <h3 className="notifications">{gettingWinner()}</h3>
-        <button className="game-btn" onClick={visible}>
-          PLAY AGAIN
-        </button>
-      </div>
+
       <div>
         <Rules />
       </div>
