@@ -12,6 +12,7 @@
 .rules-paper {
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
 }
 .scores {
   font-family: Heebo, sans-serif;
@@ -49,5 +50,6 @@ h1 {
   .rules {
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
   }
 }

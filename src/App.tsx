@@ -58,7 +58,7 @@ const App = () => {
     ) {
       return "YOU WON";
     } else {
-      return "THE HOUSE WON";
+      return "YOU LOSE";
     }
   };
   const visible = () => {
@@ -88,7 +88,7 @@ const App = () => {
               <img src={triangle} alt="rock icon" className="triangle" />
             </div>
             <div
-              className="scissors"
+              className="scissor"
               onClick={() => UserChoice("scissors")}
               style={{ cursor: "pointer" }}
             >
@@ -98,7 +98,7 @@ const App = () => {
 
           <div className="circles">
             <div
-              className="rock"
+              className="rocks"
               onClick={() => UserChoice("rock")}
               style={{ cursor: "pointer" }}
             >
@@ -110,7 +110,7 @@ const App = () => {
       {showResults && (
         <>
           <div className="results">
-            <h1>
+            <h3 className="notifications">
               YOU PICKED
               {userChoice && (
                 <div className={userChoice}>
@@ -126,15 +126,15 @@ const App = () => {
                   />
                 </div>
               )}
-            </h1>
+            </h3>
             <div className="winner">
-              <h1>{gettingWinner()}</h1>
+              <h3 className="notifications">{gettingWinner()}</h3>
               <button className="game-btn" onClick={visible}>
                 PLAY AGAIN
               </button>
             </div>
 
-            <h1>
+            <h3 className="notifications">
               THE HOUSE PICKED
               {computerChoice && (
                 <div className={computerChoice}>
@@ -150,7 +150,7 @@ const App = () => {
                   />
                 </div>
               )}
-            </h1>
+            </h3>
           </div>
         </>
       )}

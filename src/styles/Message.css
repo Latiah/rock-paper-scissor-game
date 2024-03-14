@@ -24,7 +24,7 @@ img {
   display: flex;
   justify-content: center;
 }
-.rock {
+.rocks {
   height: 100px;
   width: 100px;
   border: 20px solid hsl(349, 71%, 52%);
@@ -33,11 +33,22 @@ img {
   background-color: white;
   margin-top: 80px;
 }
-h1 {
-  color: aliceblue;
+.rock {
+  height: 100px;
+  width: 100px;
+  border: 20px solid hsl(349, 71%, 52%);
+  background-origin: padding-box;
+  border-radius: 100%;
+  background-color: white;
+  margin-top: 70px;
+}
+
+.notifications {
+  color: white;
+  font-size: 20px;
 }
 .game-btn {
-  padding: 20px 30px;
+  padding: 10px 20px;
   margin-top: 5px;
   font-size: 20px;
   border-radius: 8px;
@@ -48,8 +59,18 @@ h1 {
 .results {
   display: flex;
   justify-content: space-around;
+  margin-right: 30px;
 }
 .scissors {
+  height: 100px;
+  width: 100px;
+  border: 20px solid hsl(39, 89%, 49%);
+  background-origin: padding-box;
+  border-radius: 100%;
+  background-color: white;
+  margin-top: 70px;
+}
+.scissor {
   height: 100px;
   width: 100px;
   border: 20px solid hsl(39, 89%, 49%);
@@ -72,5 +93,19 @@ h1 {
   .circles {
     display: flex;
     justify-content: center;
+  }
+  .game-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 80px;
+  }
+  .results {
+    display: flex;
+    justify-content: center;
+  }
+
+  .notifications {
+    font-size: 13px;
+    text-align: center;
   }
 }
