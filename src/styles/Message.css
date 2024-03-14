@@ -1,5 +1,5 @@
 body {
-  background: hsl(237, 48%, 25%);
+  background: rgb(28, 28, 76);
   font-family: Heebo, sans-serif;
 }
 .triangle {
@@ -13,9 +13,7 @@ a {
   text-decoration: none;
   color: white;
 }
-h1 {
-  color: white;
-}
+
 img {
   display: block;
   margin: 0 auto;
@@ -35,7 +33,23 @@ img {
   background-color: white;
   margin-top: 80px;
 }
-.scissor {
+h1 {
+  color: aliceblue;
+}
+.game-btn {
+  padding: 20px 30px;
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.winner {
+  margin-top: 120px;
+}
+.results {
+  display: flex;
+  justify-content: space-around;
+}
+.scissors {
   height: 100px;
   width: 100px;
   border: 20px solid hsl(39, 89%, 49%);
@@ -53,4 +67,10 @@ img {
   border-radius: 100%;
   background-color: white;
   margin-top: 70px;
+}
+@media screen and (max-width: 559px) {
+  .circles {
+    display: flex;
+    justify-content: center;
+  }
 }

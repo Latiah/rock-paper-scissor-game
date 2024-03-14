@@ -28,7 +28,7 @@ h1 {
   font-family: Heebo, sans-serif;
   border-radius: 9px;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 50px;
   background: rgb(28, 28, 76);
   border: 1px solid beige;
   margin-bottom: 30px;
@@ -43,4 +43,11 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 559px) {
+  .rules,
+  .button-position {
+    display: flex;
+    justify-content: center;
+  }
 }
