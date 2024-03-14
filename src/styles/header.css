@@ -8,7 +8,11 @@
   border-radius: 10px;
   margin-top: 40px;
 }
-
+.rules,
+.rules-paper {
+  display: block;
+  margin: 0 auto;
+}
 .scores {
   font-family: Heebo, sans-serif;
   margin: 10px 15px;
@@ -34,10 +38,7 @@ h1 {
   margin-bottom: 30px;
   margin-right: 20px;
 }
-.button-position {
-  display: flex;
-  justify-content: flex-end;
-}
+
 .score-information {
   color: aliceblue;
   display: flex;
@@ -45,9 +46,8 @@ h1 {
   justify-content: center;
 }
 @media screen and (max-width: 559px) {
-  .rules,
-  .button-position {
-    display: flex;
-    justify-content: center;
+  .rules {
+    display: block;
+    margin: 0 auto;
   }
 }

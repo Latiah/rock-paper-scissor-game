@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/Message.css";
 import "./styles/header.css";
-import Rules from "./Rules";
+import Rules from "./components/Rules";
 import paperImage from "./images/icon-paper.svg";
 import scissorImage from "./images/icon-scissors.svg";
 import triangle from "./images/bg-triangle.svg";
@@ -154,7 +154,7 @@ const App = () => {
           </div>
         </>
       )}
-      <div className="button-position">
+      <div>
         <Rules />
       </div>
     </>
