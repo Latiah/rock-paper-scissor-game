@@ -47,6 +47,9 @@ img {
   color: white;
   font-size: 20px;
 }
+.small-screen-notifications {
+  display: none;
+}
 .game-btn {
   padding: 10px 20px;
   margin-top: 5px;
@@ -60,6 +63,9 @@ img {
   display: flex;
   justify-content: space-around;
   margin-right: 30px;
+}
+.winner-smallscreen {
+  display: none;
 }
 .scissors {
   height: 100px;
@@ -89,23 +95,72 @@ img {
   background-color: white;
   margin-top: 70px;
 }
+.winner-animation {
+  animation: winnerAnimation 0.6s ease-in-out forwards;
+}
+
+@keyframes winnerAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (max-width: 559px) {
   .circles {
+    margin-right: 50px;
     display: flex;
     justify-content: center;
   }
+  .triangle {
+    margin-bottom: 5px;
+    width: 260px;
+  }
+
+  .small-screen-notifications {
+    color: white;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+  }
+  .scissor,
+  .rocks,
+  .paper,
+  .scissors,
+  .rock {
+    width: 70px;
+    height: 70px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
   .game-btn {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 80px;
+    display: block;
+    margin: 0 auto;
   }
   .results {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .notifications {
     font-size: 13px;
     text-align: center;
+  }
+  .winner {
+    display: none;
+  }
+  .winner-smallscreen {
+    display: block;
   }
 }
