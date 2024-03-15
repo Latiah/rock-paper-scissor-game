@@ -134,7 +134,7 @@ const App = () => {
               )}
             </h3>
             <div className="winner">
-              <h3 className="notifications">{gettingWinner()}</h3>
+              <h3 className="notification">{gettingWinner()}</h3>
               <button className="game-btn" onClick={visible}>
                 PLAY AGAIN
               </button>

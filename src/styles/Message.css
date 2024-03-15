@@ -1,5 +1,5 @@
 body {
-  background: rgb(28, 28, 76);
+  background: rgb(26, 26, 67);
   font-family: Heebo, sans-serif;
 }
 .triangle {
@@ -42,13 +42,13 @@ img {
   background-color: white;
   margin-top: 70px;
 }
-
+.notification {
+  font-size: 30px;
+  color: white;
+}
 .notifications {
   color: white;
   font-size: 20px;
-}
-.small-screen-notifications {
-  display: none;
 }
 .game-btn {
   padding: 10px 20px;
@@ -58,12 +58,11 @@ img {
   border: 1px solid white;
 }
 .winner {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 .results {
   display: flex;
   justify-content: space-around;
-  margin-right: 30px;
 }
 .winner-smallscreen {
   display: none;
@@ -97,7 +96,7 @@ img {
   margin-top: 70px;
 }
 .winner-animation {
-  animation: winnerAnimation 0.6s ease-in-out forwards;
+  animation: winnerAnimation 0.6s ease-in backwards;
 }
 
 @keyframes winnerAnimation {
@@ -111,6 +110,7 @@ img {
     transform: scale(1);
   }
 }
+
 @media screen and (max-width: 559px) {
   .circles {
     margin-right: 50px;
@@ -122,11 +122,9 @@ img {
     width: 260px;
   }
 
-  .small-screen-notifications {
+  .notification {
+    font-size: 30px;
     color: white;
-    display: block;
-    font-size: 13px;
-    text-align: center;
   }
   .scissor,
   .rocks,
