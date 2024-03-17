@@ -96,7 +96,7 @@ img {
   background-color: white;
   margin-top: 70px;
 }
-.winner-animation {
+/*.winner-animation {
   animation: winnerAnimation 0.6s ease-in backwards;
 }
 
@@ -111,12 +111,27 @@ img {
     transform: scale(1);
   }
 }
-
+*/
+.notify {
+  display: none;
+}
+.winner-animation {
+  box-shadow: 0 0 0 40px #293251, 0 0 0 80px #232c4b, 0 0 0 130px #1e2949;
+  animation: winnerAnimation 1s ease backwards;
+  border-radius: 100%;
+  /*animation: winnerAnimation 0.6s ease-in backwards;*/
+}
 @media screen and (max-width: 559px) {
   .circles {
     margin-right: 50px;
     display: flex;
     justify-content: center;
+  }
+  .winner-animation {
+    box-shadow: 0 0 0 10px #293251, 0 0 0 30px #232c4b, 0 0 0 50px #1e2949;
+    animation: winnerAnimation 1s ease backwards;
+    border-radius: 100%;
+    /*animation: winnerAnimation 0.6s ease-in backwards;*/
   }
   .triangle {
     margin-bottom: 5px;

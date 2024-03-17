@@ -72,9 +72,7 @@ const App = () => {
           <img src={logImage} alt="log" className="log" />
         </div>
         <div className="scores">
-          <div className="score-text">
-            SCORE
-          </div>
+          <div className="score-text">SCORE</div>
           <div className="score-number">{scoreCount}</div>
         </div>
       </div>
