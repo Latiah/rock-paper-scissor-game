@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
 .header-elements {
   display: flex;
   justify-content: space-between;
@@ -16,21 +20,32 @@
 }
 .scores {
   font-family: "Barlow Semi Condensed", sans-serif;
-  margin: 10px 15px;
-  background: beige;
-  padding: 4px 50px;
+  background: white;
+  width: 130px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   border-radius: 10px;
 }
-h4 {
+.log {
+  margin-bottom: 10px;
+}
+.score-text {
+  margin-top: 20px;
+  font-size: 20px;
   font-family: Heebo, sans-serif;
   color: hsl(229, 64%, 46%);
 }
-h1 {
-  color: rgb(28, 32, 34);
+.score-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
 }
 .rules {
-  font-family: Heebo, sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   border-radius: 9px;
   color: white;
   padding: 12px 50px;
@@ -40,12 +55,6 @@ h1 {
   margin-right: 20px;
 }
 
-.score-information {
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 @media screen and (max-width: 559px) {
   .rules {
     display: block;
@@ -53,6 +62,10 @@ h1 {
     margin-top: 10px;
   }
   .scores {
-    padding: 8px 25px;
+    margin-bottom: 60px;
+  }
+
+  .log {
+    margin-top: 20px;
   }
 }

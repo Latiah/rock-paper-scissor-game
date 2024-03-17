@@ -69,11 +69,13 @@ const App = () => {
     <>
       <div className="header-elements">
         <div>
-          <img src={logImage} alt="log" />
+          <img src={logImage} alt="log" className="log" />
         </div>
         <div className="scores">
-          <h4>SCORE</h4>
-          <h1 className="score-number">{scoreCount}</h1>
+          <div className="score-text">
+            SCORE
+          </div>
+          <div className="score-number">{scoreCount}</div>
         </div>
       </div>
       {showGame && (
