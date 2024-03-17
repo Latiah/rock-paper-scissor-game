@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./styles/Message.css";
 import "./styles/header.css";
 import Rules from "./components/Rules";
+import Rulespopup from "./components/Rulespopup";
 import paperImage from "./images/icon-paper.svg";
 import scissorImage from "./images/icon-scissors.svg";
 import triangle from "./images/bg-triangle.svg";
-import rockImage from "./icon-rock.svg";
+import rockImage from "./images/icon-rock.svg";
 import logImage from "./images/logo.svg";
 type Choice = "rock" | "paper" | "scissors";
 
@@ -174,7 +175,7 @@ const App = () => {
       )}
 
       <div>
-        <Rules />
+        <Rulespopup />
       </div>
     </>
   );
