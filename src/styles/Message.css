@@ -121,12 +121,12 @@ img {
 .notify {
   display: none;
 }
-.winner-animation {
+/*.winner-animation {
   box-shadow: 0 0 0 40px #293251, 0 0 0 80px #232c4b, 0 0 0 130px #1e2949;
   animation: winnerAnimation 1s ease backwards;
   border-radius: 100%;
   /*animation: winnerAnimation 0.6s ease-in backwards;*/
-}
+
 @media screen and (max-width: 559px) {
   .circles {
     margin-right: 50px;
