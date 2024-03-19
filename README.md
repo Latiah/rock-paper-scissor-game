@@ -16,6 +16,9 @@ Scissors beats Paper
 
 You can play this game on your phone, tablet and a computer too
 
+![gamescreenshoot](src/images/winnerpage.png)
+
+
 DEVELOPER: AKIMANA LATIFAH
 
 Hosted on vercel  https://rock-paper-scissor-game-8z9m0h80x-latifahs-projects.vercel.app/
