@@ -8,7 +8,7 @@ import scissorImage from "./images/icon-scissors.svg";
 import triangle from "./images/bg-triangle.svg";
 import rockImage from "./images/icon-rock.svg";
 import logImage from "./images/logo.svg";
-import Background from "./sound/sparkling-intro-124736.mp3";
+import Background from "./sound/birdfish-happy-loop-6199.mp3";
 import winnerSound from "./sound/congratulations-deep-voice-172193.mp3";
 import loseSound from "./sound/yay-6326.mp3";
 
@@ -30,6 +30,7 @@ const App = () => {
   const winnerAudio = new Audio(winnerSound);
   const backgroundAudio = new Audio(Background);
   const loseAudio = new Audio(loseSound);
+  backgroundAudio.play();
   const winnerScore = (user: Choice) => {
     const computer = ComputerChoice();
     setComputerChoice(computer);
@@ -73,7 +74,6 @@ const App = () => {
   };
   const visible = () => {
     setShowGame(true);
-    backgroundAudio.play();
     setShowResults(false);
   };
   return (
