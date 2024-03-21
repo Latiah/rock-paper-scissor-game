@@ -114,24 +114,28 @@ const App = () => {
             <h3 className="notifications">
               YOU PICKED
               {userChoice && (
-                <div
-                  className={
-                    gettingWinner() === "YOU WON" ? "winner-animation" : ""
-                  }
-                >
-                  <div className={userChoice}>
-                    <img
-                      src={
-                        userChoice === "rock"
-                          ? rockImage
-                          : userChoice === "paper"
-                          ? paperImage
-                          : scissorImage
+                <>
+                  <div className="userchoice">
+                    <div
+                      className={
+                        gettingWinner() === "YOU WON" ? "winner-animation" : ""
                       }
-                      alt="your choice"
-                    />
+                    >
+                      <div className={userChoice}>
+                        <img
+                          src={
+                            userChoice === "rock"
+                              ? rockImage
+                              : userChoice === "paper"
+                              ? paperImage
+                              : scissorImage
+                          }
+                          alt="your choice"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </>
               )}
             </h3>
             <div className="winner">
@@ -144,24 +148,28 @@ const App = () => {
             <h3 className="notifications">
               THE HOUSE PICKED
               {computerChoice && (
-                <div
-                  className={
-                    gettingWinner() === "YOU LOSE" ? "winner-animation" : ""
-                  }
-                >
-                  <div className={computerChoice}>
-                    <img
-                      src={
-                        computerChoice === "rock"
-                          ? rockImage
-                          : computerChoice === "paper"
-                          ? paperImage
-                          : scissorImage
+                <>
+                  <div className="computerchoice">
+                    <div
+                      className={
+                        gettingWinner() === "YOU LOSE" ? "winner-animation" : ""
                       }
-                      alt="house choice"
-                    />
+                    >
+                      <div className={computerChoice}>
+                        <img
+                          src={
+                            computerChoice === "rock"
+                              ? rockImage
+                              : computerChoice === "paper"
+                              ? paperImage
+                              : scissorImage
+                          }
+                          alt="house choice"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </>
               )}
             </h3>
           </div>

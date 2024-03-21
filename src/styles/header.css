@@ -30,6 +30,10 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation-name: drop;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 .close-image {
   display: block;
@@ -83,7 +87,14 @@ body {
   margin-bottom: 30px;
   margin-right: 20px;
 }
-
+@keyframes drop {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
 @media screen and (max-width: 559px) {
   .rules {
     display: block;

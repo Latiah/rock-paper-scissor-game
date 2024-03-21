@@ -50,11 +50,15 @@ img {
   font-size: 30px;
   color: white;
   font-family: "Barlow Semi Condensed", sans-serif;
+  transform: rotate(360deg);
 }
 .notifications {
   color: white;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 20px;
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 .game-btn {
   padding: 10px 20px;
@@ -102,6 +106,38 @@ img {
   background-color: white;
   margin-top: 70px;
 }
+.userchoice {
+  animation-name: rotating;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+.computerchoice {
+  animation-name: computerchoice;
+  animation-duration: 0.3s;
+
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes computerchoice {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
 /*.winner-animation {
   animation: winnerAnimation 0.6s ease-in backwards;
 }
@@ -121,6 +157,13 @@ img {
 .notify {
   display: none;
 }
+.winner-animation {
+  box-shadow: 0 0 0 10px #7bf5a0, 0 0 0 30px #108527, 0 0 0 50px #054d53;
+  animation: winnerAnimation 1s ease backwards;
+  margin: 20px;
+  border-radius: 100%;
+  /*animation: winnerAnimation 0.6s ease-in backwards;*/
+}
 /*.winner-animation {
   box-shadow: 0 0 0 40px #293251, 0 0 0 80px #232c4b, 0 0 0 130px #1e2949;
   animation: winnerAnimation 1s ease backwards;
@@ -134,7 +177,7 @@ img {
     justify-content: center;
   }
   .winner-animation {
-    box-shadow: 0 0 0 10px #293251, 0 0 0 30px #232c4b, 0 0 0 50px #1e2949;
+    box-shadow: 0 0 0 10px #7bf5a0, 0 0 0 30px #108527, 0 0 0 50px #054d53;
     animation: winnerAnimation 1s ease backwards;
     border-radius: 100%;
     /*animation: winnerAnimation 0.6s ease-in backwards;*/
