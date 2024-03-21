@@ -8,6 +8,10 @@ import scissorImage from "./images/icon-scissors.svg";
 import triangle from "./images/bg-triangle.svg";
 import rockImage from "./images/icon-rock.svg";
 import logImage from "./images/logo.svg";
+import Background from "./sound/sparkling-intro-124736.mp3";
+import winnerSound from "./sound/congratulations-deep-voice-172193.mp3";
+import loseSound from "./sound/yay-6326.mp3";
+
 type Choice = "rock" | "paper" | "scissors";
 
 const App = () => {
@@ -23,7 +27,9 @@ const App = () => {
     setShowResults(true);
     setShowGame(false);
   };
-
+  const winnerAudio = new Audio(winnerSound);
+  const backgroundAudio = new Audio(Background);
+  const loseAudio = new Audio(loseSound);
   const winnerScore = (user: Choice) => {
     const computer = ComputerChoice();
     setComputerChoice(computer);
@@ -33,6 +39,8 @@ const App = () => {
       (user === "scissors" && computer === "paper")
     ) {
       setScoreCount(scoreCount + 1);
+      winnerAudio.play();
+      backgroundAudio.pause();
     } else if (
       (user === "rock" && computer === "rock") ||
       (user === "paper" && computer === "paper") ||
@@ -41,6 +49,7 @@ const App = () => {
       setScoreCount(scoreCount);
     } else {
       setScoreCount(0);
+      loseAudio.play();
     }
   };
   //random choice for computer
@@ -64,6 +73,7 @@ const App = () => {
   };
   const visible = () => {
     setShowGame(true);
+    backgroundAudio.play();
     setShowResults(false);
   };
   return (
