@@ -9,8 +9,8 @@ import triangle from "./images/bg-triangle.svg";
 import rockImage from "./images/icon-rock.svg";
 import logImage from "./images/logo.svg";
 import Background from "./sound/birdfish-happy-loop-6199.mp3";
-import winnerSound from "./sound/congratulations-deep-voice-172193.mp3";
-import loseSound from "./sound/yay-6326.mp3";
+import winnerSound from "./sound/yay-6326.mp3";
+import loseSound from "./sound/wah-wah-sad-trombone-6347.mp3";
 
 type Choice = "rock" | "paper" | "scissors";
 
