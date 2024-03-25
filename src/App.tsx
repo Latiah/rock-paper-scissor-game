@@ -41,7 +41,7 @@ const App = () => {
     ) {
       setScoreCount(scoreCount + 1);
       winnerAudio.play();
-      backgroundAudio.pause();
+      
     } else if (
       (user === "rock" && computer === "rock") ||
       (user === "paper" && computer === "paper") ||
